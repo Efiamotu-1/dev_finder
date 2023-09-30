@@ -11,7 +11,7 @@ function Navbar() {
             document.documentElement.classList.toggle('dark')
             setDarkmode(mode => !mode)
         }}>
-            <span className='text-[#4B6A9B] text-[13px] tracking-[2.5px] dark:text-white'>{darkmode ? "LIGHT" : "DARK"}</span>
+            <span className='text-[#4B6A9B] hover:text-[#90A4D4] dark:hover:text-[#222731] text-[13px] tracking-[2.5px] dark:text-white'>{darkmode ? "LIGHT" : "DARK"}</span>
             <img src={darkmode ? Sunicon : Moonicon}/>
         </div>
     </div>

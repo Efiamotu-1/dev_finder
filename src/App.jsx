@@ -5,13 +5,14 @@ import Search from "./components/Search"
 
 function App() {
   const [user, setUser] = useState('')
+  const [error, setError] = useState('')
 
 
   return (
     <>
     <div className='p-5'>
     <Navbar />
-    <Search setUser={setUser}/>
+    <Search error={error} setUser={setUser} setError={setError}/>
     {user && <Content user={user}/>}
 
     </div>

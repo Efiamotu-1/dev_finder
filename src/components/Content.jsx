@@ -12,7 +12,7 @@ function Content({user}) {
         <div className='grid grid-cols-custom row-cols-5'>
 
         {/* <div className='flex gap-5 py-5'> */}
-            <img src={avatar_url ? avatar_url : "Not Available"} className='w-[70px] md:w-[100px] lg:w-[130px] col-span-1 lg:row-span-5 mr-8 rounded-full'/>
+            <img src={avatar_url ? avatar_url : Avatar} className='w-[70px] md:w-[100px] lg:w-[130px] col-span-1 lg:row-span-5 mr-8 rounded-full'/>
             <div className='flex flex-col col-span-1 lg:grid lg:grid-cols-2 lg:grid-rows-2'>
                 <p className='font-bold text-black text-[26px] dark:text-white'>{name ? name.split(" ")[1] : ""}</p>
                 <p className='text-[#0079FF] lg:col-start-1 lg:col-end-2'>{login ? login : "Not Available"}</p>
